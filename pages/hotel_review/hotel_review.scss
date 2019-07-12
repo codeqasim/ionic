@@ -1,0 +1,134 @@
+page-hotel_review {
+    .header.theme_header .toolbar .title .toolbar-title {
+        display: block;
+        margin-top: 15px;
+
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: normal;
+            margin: 0;
+
+            span {
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
+            }
+
+            .badge {
+                font-weight: 400;
+                text-align: center;
+                padding: 0;
+                background: $green-color;
+                min-width: 43px;
+                max--width: 45px;
+                font-size: 1.2rem;
+                line-height: 21px;
+                height: 21px;
+                border-radius: 3px;
+
+                ion-icon {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        h3 {
+            color: $text-light;
+            margin: 0;
+            font-size: 1.15rem;
+            font-weight: 300;
+            margin-top: 2px;
+        }
+    }
+
+    h1 {
+        background: $bg-color;
+        color: darken($text-light, 30%);
+        font-weight: 400;
+        padding: 12px 22px;
+        font-size: 1.85rem;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .list {
+        margin-bottom: 0;
+
+        .item {
+            padding: 13px 22px 13px 22px;
+            margin-bottom: 5px;
+
+            .item-inner {
+                padding: 0;
+
+                .label {
+                    margin: 0;
+                    white-space: normal;
+
+                    .reviews_details {
+                        display: flex;
+                        align-items: flex-start;
+
+                        .img_box {
+                            min-width: 43px;
+                            max-width: 43px;
+                            height: 43px;
+                            border-radius: 4px;
+                            margin-right: 13px;
+                        }
+
+                        .other_details {
+                            width: 100%;
+
+                            h2 {
+                                span {
+                                    &.name {
+                                        font-size: 1.58rem;
+                                        font-weight: 700;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        //max-width: calc(100% - 83px);
+                                        width: calc(100% - 83px);
+                                        display: block;
+                                    }
+
+                                    &.ratings_icon {
+                                        min-width: 83px;
+
+                                        ion-icon {
+                                            font-size: 1.6rem;
+                                            color: lighten($text-light, 10%);
+
+                                            &.active {
+                                                color: $yelow-color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            h3 {
+                                color: darken($text-light, 10%);
+                                font-size: 1.15rem;
+                            }
+
+                        }
+
+                    }
+
+                    p {
+                        color: darken($text-dark, 0%);
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        padding-top: 13px;
+                    }
+
+                }
+            }
+        }
+    }
+}

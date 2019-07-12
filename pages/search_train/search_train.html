@@ -1,0 +1,230 @@
+<ion-header class="theme_header bg-transparent">
+    <ion-navbar>
+        <ion-title>
+            {{'search_tarain' | translate}}
+        </ion-title>
+    </ion-navbar>
+    <div class="banner from">
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/train.png" class="crop_img">
+        </div>
+        <ion-list no-lines class="form">
+            <ion-item>
+                <ion-icon class="zmdi zmdi-long-arrow-up" item-start></ion-icon>
+                <h4>{{'from' | translate}}</h4>
+                <!--                <ion-input type="text" value="Hou - Houstone, USA"></ion-input>-->
+                <h2>Houstone, USA</h2>
+            </ion-item>
+            <h3>
+                <ion-icon class="zmdi zmdi-swap-vertical"></ion-icon>
+            </h3>
+            <ion-item>
+                <ion-icon class="zmdi zmdi-long-arrow-down" item-start></ion-icon>
+                <h4>{{'to' | translate}}</h4>
+                <!--                <ion-input type="text" value="MHK - Manhattan, USA"></ion-input>-->
+                <h2>Manhattan, USA</h2>
+            </ion-item>
+        </ion-list>
+
+        <ion-segment [(ngModel)]="train">
+              <ion-segment-button value="one_way">
+                {{'one_way' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="return">
+                {{'return' | translate}}
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="tab_container" [ngSwitch]="train">
+        <div class="tab_contant" *ngSwitchCase="'one_way'">
+            <ion-list no-lines>
+                <ion-card>
+                    <ion-row>
+                        <ion-col col-5>
+                            <h3>{{'departure' | translate}}</h3>
+                            <ion-item>
+                                <div class="text">
+                                    <h2>23</h2>
+                                    <h4>Jul 2019 <span>Tuesday</span></h4>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col col-7>
+                            <div class="one_way_option">
+                                <ion-icon class="zmdi zmdi-calendar-alt" ion-datepicker [(value)]="initDate" locale="en-US" clear></ion-icon>
+                                <h4>
+                                    15 Jul
+                                    <span>Today</span>
+                                </h4>
+                                <h4>
+                                    16 Jul
+                                    <span>Tomorrow</span>
+                                </h4>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+
+                <ion-card>
+                    <h3>{{'travellers' | translate}}</h3>
+                    <ion-row>
+                        <ion-col col-4>
+                            <ion-item>
+                                <ion-select [(ngModel)]="abult" interface="action-sheet" item-start>
+                                    <ion-option value="1">01</ion-option>
+                                    <ion-option value="2">02</ion-option>
+                                    <ion-option value="3">03</ion-option>
+                                    <ion-option value="4">04</ion-option>
+                                    <ion-option value="5">05</ion-option>
+                                </ion-select>
+                                <ion-label>{{'abult' | translate}}</ion-label>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col col-4>
+                            <ion-item>
+                                <ion-select [(ngModel)]="children" interface="action-sheet" item-start>
+                                    <ion-option value="0">0</ion-option>
+                                    <ion-option value="1">01</ion-option>
+                                    <ion-option value="2">02</ion-option>
+                                    <ion-option value="3">03</ion-option>
+                                    <ion-option value="4">04</ion-option>
+                                    <ion-option value="5">05</ion-option>
+                                </ion-select>
+                                <ion-label>{{'children' | translate}}</ion-label>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col col-4>
+                            <ion-item>
+                                <ion-select [(ngModel)]="infrat" interface="action-sheet" item-start>
+                                    <ion-option value="0">0</ion-option>
+                                    <ion-option value="1">01</ion-option>
+                                    <ion-option value="2">02</ion-option>
+                                    <ion-option value="3">03</ion-option>
+                                    <ion-option value="4">04</ion-option>
+                                    <ion-option value="5">05</ion-option>
+                                </ion-select>
+                                <ion-label>{{'infrat' | translate}}</ion-label>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+
+                <ion-card class="select_provider">
+                    <h3>{{'select_provider' | translate}}</h3>
+                    <ion-row>
+                        <ion-col col-12>
+                            <ion-item>
+                                <ion-select [(ngModel)]="class">
+                                    <ion-option value="1">All Provider</ion-option>
+                                    <ion-option value="2">Provider</ion-option>
+                                </ion-select>
+<!--                                <ion-label>{{'class' | translate}}</ion-label>-->
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-list>
+        </div>
+        
+        
+        <div class="tab_contant" *ngSwitchCase="'return'">
+            <ion-list no-lines>
+                <ion-card>
+                    <ion-row>
+                        <ion-col col-5>
+                            <h3>{{'departure' | translate}}</h3>
+                            <ion-item>
+                                <div class="text">
+                                    <h2>24</h2>
+                                    <h4>Jul 2019 <span>Tuesday</span></h4>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col col-7>
+                            <div class="one_way_option">
+                                <ion-icon class="zmdi zmdi-calendar-alt" ion-datepicker [(value)]="initDate" locale="en-US" clear></ion-icon>
+                                <h4>
+                                    15 Jul
+                                    <span>Today</span>
+                                </h4>
+                                <h4>
+                                    16 Jul
+                                    <span>Tomorrow</span>
+                                </h4>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+
+                <ion-card>
+                    <h3>{{'travellers' | translate}}</h3>
+                    <ion-row>
+                        <ion-col col-4>
+                            <ion-item>
+                                <ion-select [(ngModel)]="abult" interface="action-sheet" item-start>
+                                    <ion-option value="1">01</ion-option>
+                                    <ion-option value="2">02</ion-option>
+                                    <ion-option value="3">03</ion-option>
+                                    <ion-option value="4">04</ion-option>
+                                    <ion-option value="5">05</ion-option>
+                                </ion-select>
+                                <ion-label>{{'abult' | translate}}</ion-label>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col col-4>
+                            <ion-item>
+                                <ion-select [(ngModel)]="children" interface="action-sheet" item-start>
+                                    <ion-option value="0">0</ion-option>
+                                    <ion-option value="1">01</ion-option>
+                                    <ion-option value="2">02</ion-option>
+                                    <ion-option value="3">03</ion-option>
+                                    <ion-option value="4">04</ion-option>
+                                    <ion-option value="5">05</ion-option>
+                                </ion-select>
+                                <ion-label>{{'children' | translate}}</ion-label>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col col-4>
+                            <ion-item>
+                                <ion-select [(ngModel)]="infrat" interface="action-sheet" item-start>
+                                    <ion-option value="0">0</ion-option>
+                                    <ion-option value="1">01</ion-option>
+                                    <ion-option value="2">02</ion-option>
+                                    <ion-option value="3">03</ion-option>
+                                    <ion-option value="4">04</ion-option>
+                                    <ion-option value="5">05</ion-option>
+                                </ion-select>
+                                <ion-label>{{'infrat' | translate}}</ion-label>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+
+                <ion-card  class="select_provider">
+                    <h3>{{'select_provider' | translate}}</h3>
+                    <ion-row>
+                        <ion-col col-12>
+                            <ion-item>
+                                <ion-select [(ngModel)]="class">
+                                    <ion-option value="1">All Provider</ion-option>
+                                    <ion-option value="2">Provider</ion-option>
+                                </ion-select>
+<!--                                <ion-label>{{'class' | translate}}</ion-label>-->
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+<ion-footer no-border>
+    <button ion-button text-uppercase no-margin full class="btn"  (click)="train_result()">{{'show_result' | translate}}</button>
+</ion-footer>

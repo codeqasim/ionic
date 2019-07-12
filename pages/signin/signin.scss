@@ -1,0 +1,94 @@
+page-signin {
+    .header {
+        padding-top: 50px;
+
+        .toolbar {
+            .bar-button {
+                display: none !important;
+            }
+
+            .title .toolbar-title {
+                margin-top: 35px !important;
+
+                .end img {
+                    width: 75px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .socila_section {
+        background: $white;
+        //padding: 110px 19px 18px 19px;
+        padding: 102px 19px 18px 19px;
+        margin-bottom: 8px;
+
+        p {
+            color: darken($text-light, 10%);
+            margin: 0;
+            font-size: 1.65rem;
+            padding-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .row {
+            margin-bottom: 23px;
+            margin: 0 -10px;
+
+            .col {
+                padding: 0 10px;
+            }
+        }
+
+        .button.btn {
+            color: darken($white, 100%) !important;
+            letter-spacing: 0;
+
+            &[block] {
+                border-radius: 7px;
+            }
+
+            img {
+                width: 18px;
+                position: relative;
+                left: -12px;
+            }
+
+        }
+    }
+
+    .form {
+        padding-top: 20px;
+        padding-bottom: 15px;
+
+        h2 {
+            color: darken($text-dark, 0%);
+            margin: 0;
+            font-size: 1.7rem;
+            padding-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .item .item-inner .label {
+            span {
+                color: $theme-color;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .footer {
+        .button.btn[clear] {
+            border: none !important;
+        }
+    }
+
+    .item {
+        .input-cover {
+            top: unset;
+            bottom: 13px;
+            height: 41px;
+        }
+    }
+}

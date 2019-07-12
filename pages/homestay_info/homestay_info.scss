@@ -1,0 +1,240 @@
+page-homestay_info {
+    .header {
+        .toolbar .bar-button .button-inner ion-icon {
+            color: $white !important;
+            position: relative;
+            top: -9px;
+        }
+    }
+
+    .scroll-content {
+        margin-top: 0 !important;
+    }
+
+    .banner {
+        background: $white;
+        margin-bottom: 7px;
+
+        .slides {
+            .profile_img {
+                width: 100%;
+                height: 180px;
+            }
+
+            .swiper-container-horizontal > .swiper-pagination-bullets {
+                left: 0;
+                bottom: 10px;
+                width: 100%;
+
+                z-index: 2;
+
+                .swiper-pagination-bullet {
+                    background: darken($bg-color, 0%);
+                    opacity: .5;
+                    margin: 0 4px;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+
+                    &.swiper-pagination-bullet-active {
+                        background: $white;
+                        opacity: 1;
+
+                    }
+                }
+            }
+        }
+
+        .banner_details {
+            padding: 13px 18px;
+            padding-bottom: 15px;
+
+            h2 {
+                font-size: 1.9rem;
+                font-weight: 600;
+                letter-spacing: normal;
+                margin: 0;
+                letter-spacing: 0;
+
+                span {
+                    display: block;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+
+                }
+
+                .badge {
+                    font-weight: 400;
+                    text-align: center;
+                    padding: 0;
+                    background: $green-color;
+                    min-width: 43px;
+                    max--width: 45px;
+                    font-size: 1.2rem;
+                    line-height: 21px;
+                    height: 21px;
+                    border-radius: 3px;
+
+                    ion-icon {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            h3 {
+                color: $text-light;
+                margin: 0;
+                font-size: 1.15rem;
+                font-weight: 400;
+                margin-top: 2px;
+            }
+        }
+    }
+
+    .list {
+        margin-bottom: 0;
+
+        .item {
+            padding: 0;
+            padding: 18px 18px;
+            padding-bottom: 15px;
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .item-inner {
+                padding: 0;
+
+                .label {
+                    margin: 0;
+                    white-space: normal;
+
+                    h2 {
+                        margin: 0;
+                        font-size: 1.9rem;
+                        letter-spacing: 0;
+                        color: darken($text-light, 25%);
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            &.amenities {
+                padding-left: 0;
+                padding-right: 0;
+
+                .item-inner .label {
+                    h2 {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        margin-bottom: 16px;
+                    }
+
+                    .scroll-x {
+                        white-space: nowrap;
+                        height: 42px;
+
+                        .scroll_box {
+                            display: inline-block;
+                            width: 52px;
+                            margin: 0 3px;
+
+                            &:first-child {
+                                margin-left: 10px;
+                            }
+
+                            &:last-child {
+                                margin-right: 10px;
+                            }
+
+                            ion-icon {
+                                color: $theme-color;
+                                border-radius: 50%;
+                                font-size: 1.5rem;
+                            }
+
+                            p {
+                                color: darken($text-dark, 0%);
+                                font-size: 1.25rem;
+                                font-weight: 500;
+                                margin-top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.about {
+                .item-inner .label {
+                    p {
+                        color: darken($text-light, 100%);
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            &.icon_container {
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                .item-inner .label {
+                    .row {
+                        margin: 0 -5px;
+
+                        .col {
+
+                            padding-bottom: 0;
+
+                            ion-icon {
+                                color: $theme-color;
+                                background: $bg-color;
+                                text-align: center;
+                                width: 50px;
+                                height: 50px;
+                                line-height: 50px;
+                                border-radius: 50%;
+                                font-size: 2.2rem;
+                            }
+
+                            p {
+                                color: darken($text-dark, 0%);
+                                font-size: 1.25rem;
+                                font-weight: 500;
+                                margin-top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .footer {
+        background: $theme-color;
+        padding: 16px 18px;
+
+        h2 {
+            margin: 0;
+            color: $white;
+            font-size: 1.8rem;
+
+            small {
+                font-size: 1.1rem;
+                font-weight: 400;
+                opacity: .8;
+                margin: 0 5px;
+                letter-spacing: .5px;
+            }
+
+            span {
+                letter-spacing: 2px;
+                font-size: 1.45rem;
+            }
+        }
+    }
+}

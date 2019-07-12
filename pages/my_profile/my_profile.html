@@ -1,0 +1,40 @@
+<ion-header class="theme_header">
+    <ion-navbar>
+        <ion-title>{{'my_profile' | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="form">
+        <div class="profile_img">
+            <div class="img_box center_img">
+                <img src="assets/imgs/g8.png" class="crop_img">
+            </div>
+            <ion-icon class="zmdi zmdi-camera"></ion-icon>
+        </div>
+        <ion-list no-lines>
+            <ion-item>
+                <ion-label>{{'enter_full_name' | translate}}</ion-label>
+                <ion-input type="text" value="Sam Smith"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>{{'email_address' | translate}}</ion-label>
+                <ion-input type="text" value="samsmith@mail.com"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>{{'phone_number' | translate}}</ion-label>
+                <ion-input type="text" value="+1 987 654 3210"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label class="d-flex">{{'select_gender' | translate}}</ion-label>
+                <ion-select [(ngModel)]="select_gender">
+                    <ion-option value="male">Male</ion-option>
+                    <ion-option value="female">Female</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+<ion-footer no-border>
+    <button ion-button text-uppercase no-margin full class="btn">{{'update_profile' | translate}}</button>
+</ion-footer>

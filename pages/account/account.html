@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'account' | translate}}</ion-title>
+    </ion-navbar>
+    <div class="profile_box d-flex" (click)="my_profile()">
+        <div class="img_box center_img">
+            <img src="assets/imgs/g8.png" class="crop_img">
+        </div>
+        <div class="profile_details">
+            <h2>Sam Smith</h2>
+            <p>{{'view_profile' | translate}}</p>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg-color">
+    <ion-list no-lines>
+        <ion-item (click)="support()">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-email"></ion-icon>
+                {{'support' | translate}}
+            </h2>
+        </ion-item>
+        <ion-item (click)="about_us()">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-assignment-account"></ion-icon>
+                {{'about_us' | translate}}
+            </h2>
+        </ion-item>
+        <ion-item (click)="condition()">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-assignment"></ion-icon>
+                {{'terms_conditions' | translate}}
+            </h2>
+        </ion-item>
+        <ion-item (click)="my_reviews()">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-star"></ion-icon>
+                {{'my_reviews' | translate}}
+            </h2>
+        </ion-item>
+        <ion-item>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-share"></ion-icon>
+                {{'share_app' | translate}}
+            </h2>
+        </ion-item>
+        <ion-item>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-thumb-up"></ion-icon>
+                {{'rate_app' | translate}}
+            </h2>
+        </ion-item>
+        <ion-item (click)="signin()">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-power-off"></ion-icon>
+                {{'logout' | translate}}
+            </h2>
+        </ion-item>
+    </ion-list>
+</ion-content>

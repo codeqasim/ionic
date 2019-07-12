@@ -1,0 +1,223 @@
+page-list_of_homestay {
+    .header {
+        padding-top: 14px;
+        overflow: hidden;
+        padding-bottom: 10px;
+        overflow: hidden;
+
+        .toolbar .bar-button .button-inner ion-icon {
+            color: $white !important;
+            position: relative;
+            top: -9px;
+        }
+
+        .toolbar .title .toolbar-title {
+            display: block;
+
+
+            h2 {
+                color: $white;
+                margin: 0;
+                font-size: 2.1rem;
+                font-weight: 400;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            p {
+                margin: 0;
+                color: darken($text-light, 5%);
+                font-size: 1.2rem;
+                font-weight: 400;
+
+                ion-icon {
+                    font-size: .1rem;
+                    color: $white;
+                    min-width: 20px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 3px;
+                        height: 3px;
+                        background: $white;
+                        margin: auto;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .header_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+
+    .list {
+        margin: 0;
+
+        .item {
+            position: relative;
+            overflow: hidden;
+            padding: 2px 0 0 0;
+            margin-bottom: 8px;
+            box-shadow: 0 7px 11px -11px rgba(0, 0, 0, 0.1);
+
+            .item-inner {
+                padding: 0;
+
+                .label {
+                    margin: 0;
+                    white-space: normal;
+
+                    .badge {
+                        font-weight: 400;
+                        text-align: center;
+                        padding: 0;
+                        background: $green-color;
+                        min-width: 41px;
+                        max-width: 43px;
+                        font-size: 1.2rem;
+                        line-height: 21px;
+                        height: 21px;
+                        border-radius: 3px;
+                        position: absolute;
+                        top: 96px;
+                        z-index: 99;
+                        left: 12px;
+
+                        ion-icon {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .scroll-x {
+                        height: 125px;
+                        white-space: nowrap;
+
+                        .img_box {
+                            display: inline-block;
+                            display: inline-block;
+                            width: 210px;
+                            height: 125px;
+                            margin: 0 -0.4px;
+
+                            &:first-child {
+                                margin-left: 3px;
+                            }
+
+                            &:last-child {
+                                margin-right: 3px;
+                            }
+
+                        }
+                    }
+
+                    .item_details {
+                        position: relative;
+                        overflow: hidden;
+                        padding: 4px 13px 8px 13px;
+
+                        h2 {
+                            margin: 0;
+                            font-size: 1.55rem;
+                            font-weight: 600;
+                            position: relative;
+
+                            span {
+                                font-size: 1.75rem;
+                                color: $white;
+                                font-weight: 500;
+                            }
+                        }
+
+                        p {
+                            color: darken($text-light, 5%);
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            position: relative;
+
+                            span {
+                                opacity: .5;
+                                color: $white;
+                                font-weight: 300;
+                                font-size: 1.16rem q q;
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            width: 145px;
+                            right: 0;
+                            height: 100%;
+                            background: $theme-gradient;
+
+                        }
+                    }
+
+                    .item_facilitate {
+                        width: 100%;
+                        background: lighten($bg-color, 1%);
+                        padding: 11px 7px 11px 7px;
+
+                        .icon_text_box {
+                            span {
+                                display: flex;
+                                align-items: center;
+                                margin: 0 auto;
+
+                                ion-icon {
+                                    font-size: 1.25rem;
+                                    display: block;
+                                }
+
+                                p {
+                                    margin: 0 4px;
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        overflow: hidden;
+
+        .button.btn {
+            height: 53px;
+
+            ion-icon {
+                padding-right: 11px;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            margin: auto;
+            background: darken($gray, 100%);
+            opacity: .3;
+        }
+    }
+}

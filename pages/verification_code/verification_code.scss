@@ -1,0 +1,23 @@
+page-verification_code {
+    .header.theme_header .toolbar .title .toolbar-title {
+        display: block !important;
+
+        h2 {
+            margin: 0;
+            white-space: normal;
+            color: darken($text-light, 7%);
+            font-size: 1.7rem;
+            font-weight: 400;
+            margin-top: 7px;
+            line-height: 22px;
+        }
+    }
+
+    .form {
+        margin-top: 34px;
+    }
+
+    .button.btn {
+        margin-top: 67px !important;
+    }
+}

@@ -1,0 +1,144 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+    <div class="banner">
+        <ion-slides autoplay="5000" loop="true" speed="500" pager dir="ltr">
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house3.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house1.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house2.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house1.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slides>
+
+        <div class="banner_details">
+            <h2 class="d-flex"><span>White Heaven Villa</span>
+                <ion-badge class="end">4.7 <ion-icon class="zmdi zmdi-star"></ion-icon>
+                </ion-badge>
+            </h2>
+            <h3 class="d-flex"><span>City Cricle, Manhattan</span> <span class="end">1.5k {{'people_rated' | translate}}</span></h3>
+        </div>
+    </div>
+
+    <ion-list no-lines>
+        <ion-item class="amenities">
+            <h2>{{'amenities' | translate}}</h2>
+            <ion-scroll scrollX="true">
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-wifi-alt"></ion-icon>
+                    <p>WiFi</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-iridescent"></ion-icon>
+                    <p>Ac</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-tv"></ion-icon>
+                    <p>Tv</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-invert-colors"></ion-icon>
+                    <p>Pool</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-cutlery"></ion-icon>
+                    <p>Kitchen</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-fire"></ion-icon>
+                    <p>Geyser</p>
+                </div>
+
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-wifi-alt"></ion-icon>
+                    <p>WiFi</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-iridescent"></ion-icon>
+                    <p>Ac</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-tv"></ion-icon>
+                    <p>Tv</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-invert-colors"></ion-icon>
+                    <p>Pool</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-cutlery"></ion-icon>
+                    <p>Kitchen</p>
+                </div>
+                <div class="scroll_box" text-center>
+                    <ion-icon class="zmdi zmdi-fire"></ion-icon>
+                    <p>Geyser</p>
+                </div>
+            </ion-scroll>
+        </ion-item>
+
+        <ion-item class="about">
+            <h2>{{'about' | translate}}</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.
+            </p>
+        </ion-item>
+
+        <ion-item class="icon_container">
+            <ion-row>
+                <ion-col col-3>
+                    <div class="icon_box" text-center>
+                        <ion-icon class="zmdi zmdi-map"></ion-icon>
+                        <p>{{'location' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col col-3 (click)="home_reviews()">
+                    <div class="icon_box" text-center>
+                        <ion-icon class="zmdi zmdi-star"></ion-icon>
+                        <p>{{'reviews' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col col-3>
+                    <div class="icon_box" text-center>
+                        <ion-icon class="zmdi zmdi-image"></ion-icon>
+                        <p>{{'photos' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col col-3>
+                    <div class="icon_box" text-center>
+                        <ion-icon class="zmdi zmdi-collection-text"></ion-icon>
+                        <p>{{'similar' | translate}}</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer no-border (click)="homestay_booked()">
+    <h2 class="d-flex">$120.00 <small>For 2 Guests</small><span class="end" text-uppercase>{{'book_now' | translate}}</span></h2>
+</ion-footer>

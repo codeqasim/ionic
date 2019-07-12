@@ -1,0 +1,337 @@
+page-search_bus {
+    .header.theme_header {
+        padding-top: 0;
+
+        .toolbar {
+            position: absolute;
+            padding-top: 10px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+
+            .bar-button .button-inner ion-icon {
+                color: $white;
+            }
+
+            .title .toolbar-title {
+                color: $white;
+                font-size: 2.2rem !important;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .banner {
+        position: relative;
+        overflow: hidden;
+        padding: 0 20px;
+        padding-top: 110px;
+        padding-bottom: 15px;
+
+        .banner_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 0px);
+
+        }
+
+        .list {
+            margin: 0;
+
+            &.form {
+                padding: 0;
+                background: none;
+                padding-bottom: 20px;
+
+                h3 {
+                    margin: 0;
+
+                    ion-icon {
+                        color: $white;
+                        font-size: 1.9rem;
+                        width: 24px;
+                        text-align: center;
+                        position: relative;
+                        top: 4px;
+                    }
+                }
+
+                .item {
+                    padding: 0;
+                    margin-bottom: 5px;
+
+                    ion-icon {
+                        &[item-start] {
+                            color: $theme-color;
+                            font-size: 1.9rem;
+                            width: 24px;
+                            width: 24px;
+                            text-align: center;
+                            position: relative;
+                            top: 2px;
+                            margin: 0;
+                            margin-top: 18px;
+                            margin-right: 17px;
+                        }
+
+
+                    }
+
+                    .item-inner {
+                        .label {
+                            //font-size: 1.5rem;
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                            color: $text-light !important;
+                            margin-bottom: 0px;
+
+                            h4 {
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                color: $text-light !important;
+                                margin-bottom: 5px;
+                            }
+
+                            h2 {
+                                background: none;
+                                border-radius: 0;
+                                padding: 0;
+                                border-bottom: 1px solid rgba(246, 246, 246, 0.62) !important;
+                                padding-bottom: 5px;
+                                color: $white;
+                                font-size: 1.8rem;
+                                font-weight: 400;
+                                padding-bottom: 8px;
+                                position: relative
+                            }
+                        }
+
+                        ion-input {
+                            background: none;
+                            border-radius: 0;
+                            padding: 0;
+                            border-bottom: 1px solid $white !important;
+                            padding-bottom: 5px;
+                            color: $white;
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tab_container {
+        padding: 0 20px;
+        padding-top: 35px;
+
+        .tab_contant {
+            .list {
+                margin: 0;
+
+                .card {
+                    box-shadow: none;
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 35px;
+
+                    ion-row {
+                        align-items: center;
+                        margin: 0 -5px;
+
+                        .col {
+                            padding-top: 0;
+                            padding-bottom: 0;
+
+                            .one_way_option {
+                                display: flex;
+                                align-items: center;
+                                margin: 0 -5px;
+                                margin-top: 9px;
+
+                                ion-icon {
+                                    background: $bg-color;
+                                    font-size: 1.5rem;
+                                    border-radius: 3px;
+                                    text-align: center;
+                                    height: 33px;
+                                    line-height: 33px;
+                                    width: 33px;
+                                    min-width: 33px;
+                                    margin: 0 5px;
+                                }
+
+                                h4 {
+                                    margin: 0;
+                                    font-size: 1rem;
+                                    font-weight: 500;
+                                    letter-spacing: .5px;
+                                    background: $bg-color;
+                                    border-radius: 3px;
+                                    height: 25px;
+                                    margin: 0 5px;
+                                    height: 33px;
+                                    text-align: center;
+                                    width: 80px;
+                                    line-height: 14px;
+                                    padding-top: 3px;
+
+
+                                    span {
+                                        display: block;
+                                        color: $text-light;
+                                        font-weight: 400;
+                                        font-size: 1rem;
+                                        letter-spacing: .5px;
+                                    }
+                                }
+                            }
+
+                            &[col-2] {
+                                position: relative;
+                                height: 57px;
+
+                                &::after {
+                                    content: '';
+                                    content: '';
+                                    position: absolute;
+                                    top: 3px;
+                                    left: 0;
+                                    right: 0;
+                                    margin: 0 auto;
+                                    width: 1px;
+                                    height: 49px;
+                                    background: $gray;
+
+                                }
+                            }
+                        }
+                    }
+
+                    h3 {
+                        margin: 0;
+                        color: $text-light;
+                        text-transform: uppercase;
+                        font-size: 1.17rem;
+                        letter-spacing: 1px;
+                    }
+
+                    .item {
+                        padding: 0;
+
+                        .item-inner {
+                            padding: 0;
+
+                            .label {
+                                margin: 0;
+
+                                .text {
+                                    display: flex;
+                                    align-items: flex-start;
+
+                                    h2 {
+                                        font-size: 2.8rem;
+                                        font-weight: 600;
+                                        margin: 0;
+                                        line-height: 24px;
+                                        margin-right: 10px;
+                                    }
+
+                                    h4 {
+                                        margin: 0;
+                                        font-size: 1.1rem;
+                                        font-weight: 500;
+                                        letter-spacing: .5px;
+
+                                        span {
+                                            display: block;
+                                            color: $text-light;
+                                            font-weight: 400;
+                                            font-size: 1.1rem;
+                                            letter-spacing: .5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.item-select {
+                            .label {
+                                margin: 0;
+                                font-size: 1.1rem;
+                                font-weight: 500;
+                                letter-spacing: .5px;
+                                color: $text-dark;
+                                position: relative;
+                                top: -5px;
+                            }
+
+                            .select {
+                                padding: 0;
+                                margin: 0;
+                                max-width: unset;
+
+                                .select-text {
+                                    font-size: 2.8rem;
+                                    font-weight: 600;
+                                    margin: 0;
+                                    margin-right: 10px;
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
+
+                                .select-icon {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &.item-datetime {
+                            .datetime {
+                                padding: 0 !important;
+
+                                .datetime-text {
+                                    font-size: 2.8rem;
+                                    font-weight: 600;
+                                    margin: 0;
+                                    margin-right: 10px;
+                                    max-width: 100%;
+                                    width: 100%;
+                                    text-transform: lowercase;
+                                }
+                            }
+
+                            ion-icon {
+                                &[item-end] {
+                                    margin: 0 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &.select_provider {
+                        .item.item-select .select {
+                            max-width: 100%;
+                            width: 100%;
+
+                            .select-icon {
+                                display: block;
+                                position: relative;
+                                width: 16px;
+                                top: 13px;
+
+                                .select-icon-inner {
+                                    color: darken($bg-color, 100%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

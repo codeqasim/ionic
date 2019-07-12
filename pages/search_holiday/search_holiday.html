@@ -1,0 +1,68 @@
+<ion-header class="theme_header bg-transparent">
+    <ion-navbar>
+        <ion-title>
+            {{'search_holiday_packages' | translate}}
+        </ion-title>
+    </ion-navbar>
+    <div class="banner from">
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/holiday.png" class="crop_img">
+        </div>
+        <ion-list no-lines class="form">
+            <ion-item>
+                <ion-icon class="zmdi zmdi-gps-dot" item-start></ion-icon>
+                <h4>{{'from' | translate}}</h4>
+                <!--                <ion-input type="text" value="Hou - Houstone, USA"></ion-input>-->
+                <h2>Houstone, USA</h2>
+            </ion-item>
+            <ion-item>
+                <ion-icon class="zmdi zmdi-pin" item-start></ion-icon>
+                <h4>{{'to' | translate}}</h4>
+                <!--                <ion-input type="text" value="MHK - Manhattan, USA"></ion-input>-->
+                <h2>Manhattan, USA</h2>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="tab_container">
+        <div class="tab_contant">
+            <ion-list no-lines>
+                <ion-card class="select_provider">
+                    <h3>{{'select_month_of_travel' | translate}}</h3>
+                    <ion-row>
+                        <ion-col col-12>
+                            <ion-item>
+                                <ion-select [(ngModel)]="month">
+                                    <ion-option value="1">November 2019</ion-option>
+                                    <ion-option value="2">December 2019</ion-option>
+                                </ion-select>
+                                <!--                                <ion-label>{{'class' | translate}}</ion-label>-->
+                            </ion-item>
+                        </ion-col>
+                    </ion-row> 
+                </ion-card>
+
+                <ion-card class="select_provider">
+                    <h3>{{'budget' | translate}}</h3>
+                    <ion-row>
+                        <ion-col col-12>
+                            <ion-item>
+                                <ion-item>
+                                    <h3 item-start>$100</h3>
+                                    <ion-range dualKnobs="true" pin="true" [(ngModel)]="structure">
+                                    </ion-range>
+                                    <h3 item-end>$1000</h3>
+                                </ion-item>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+<ion-footer no-border>
+    <button ion-button text-uppercase no-margin full class="btn" (click)="holiday_list()">{{'show_result' | translate}}</button>
+</ion-footer>

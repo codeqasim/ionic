@@ -1,0 +1,96 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>{{'holiday_booked' | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="booking_receipt">
+        <div class="container receipt_header">
+            <h2>Manhattan Beaches</h2>
+            <h6 class="d-flex">{{'call_us' | translate}} <span class="end">$120.00</span></h6>
+        </div>
+        <div class="banner">
+            <ion-scroll scrollX="true">
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho2.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho3.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-scroll>
+        </div>
+        <div class="container receipt_containt">
+            <ion-row>
+                <ion-col col-6>
+                    <h3>{{'holiday_starts' | translate}}</h3>
+                    <h2>23 Jun </h2>
+                </ion-col>
+                <ion-col col-6 text-end>
+                    <h3>{{'holiday_ends' | translate}}</h3>
+                    <h2>24 Jun, 10:00 am</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-5>
+                    <h3>{{'booked_by' | translate}}</h3>
+                    <h2>Sam Smith</h2>
+                </ion-col>
+                <ion-col col-2 text-center>
+                    <h3>{{'age' | translate}}</h3>
+                    <h2>25</h2>
+                </ion-col>
+                <ion-col col-5 text-end>
+                    <h3>{{'gender' | translate}}</h3>
+                    <h2>Male</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div class="container tab_container">
+            <ion-segment [(ngModel)]="booking_day">
+                <ion-segment-button value="day_a">
+                    Day 1
+                </ion-segment-button>
+                <ion-segment-button value="day_b">
+                    Day 2
+                </ion-segment-button>
+                <ion-segment-button value="day_c">
+                    Day 3
+                </ion-segment-button>
+            </ion-segment>
+            <div class="" [ngSwitch]="booking_day">
+                <div class="tab_containt" *ngSwitchCase="'day_a'">
+                    <h2 class="">- Pick-up from Air Port</h2>
+                    <h2 class="">- Drop at hotel</h2>
+                    <h2 class="">- Breakfast at Hotel</h2>
+                    <h2 class="">- At evening sightseeing at beach</h2>
+                    <h2 class="">- Candle light dinner at beach resort</h2>
+                </div>
+                <div class="tab_containt" *ngSwitchCase="'day_b'">
+                    <h2 class="">- At evening sightseeing at beach</h2>
+                    <h2 class="">- Candle light dinner at beach resort</h2>
+                </div>
+                <div class="tab_containt" *ngSwitchCase="'day_c'">
+                    <h2 class="">- Breakfast at Hotel</h2>
+                    <h2 class="">- At evening sightseeing at beach</h2>
+                    <h2 class="">- Candle light dinner at beach resort</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

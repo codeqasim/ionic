@@ -1,0 +1,51 @@
+page-about_us {
+    .header.theme_header {
+        padding-bottom: 0;
+
+        .toolbar {
+            padding-bottom: 0;
+            min-height: unset;
+
+            .title .toolbar-title {
+                display: block;
+
+                h2 {
+                    margin-top: 0 !important;
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+
+    h2 {
+        margin: 0;
+        white-space: normal;
+        color: darken($text-light, 7%);
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 22px;
+
+
+    }
+
+    .text_container {
+        padding: 0 16px;
+
+        h2 {
+            margin-top: 18px;
+
+            &:first-child {
+                margin-top: 5px;
+            }
+        }
+
+        p {
+            margin: 0;
+            margin: 0;
+            margin-top: 23px;
+            font-size: 1.45rem;
+            /* letter-spacing: .5px; */
+            line-height: 18px;
+        }
+    }
+}

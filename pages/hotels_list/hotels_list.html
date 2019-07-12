@@ -1,0 +1,129 @@
+<ion-header class="bg-transparent">
+    <ion-navbar>
+        <ion-title>
+            <h2>Manhattan, USA</h2>
+            <p class="d-flex">
+                <span>{{'check_in' | translate}} 23 Jul </span>
+                <ion-icon></ion-icon>
+                <span>{{'check_out' | translate}} 27 Jul </span>
+                <ion-icon></ion-icon>
+                <span>2 {{'guests' | translate}}</span>
+            </p>
+        </ion-title>
+    </ion-navbar>
+    <div class="header_bg">
+        <img src="assets/imgs/hotel.png">
+    </div>
+</ion-header>
+
+<ion-content class="bg-color">
+    <ion-list no-lines>
+        <ion-item (click)="hotel_info()">
+            <ion-badge class="end">4.7 <ion-icon class="zmdi zmdi-star"></ion-icon>
+            </ion-badge>
+            <ion-scroll scrollX="true">
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+            </ion-scroll>
+            <div class="item_details">
+                <h2 class="d-flex">Hotel Sky Garden <span class="end">$100.00</span></h2>
+                <p class="d-flex">City park, Manhattan <span class="end">For 2 {{'guests' | translate}}</span></p>
+            </div>
+        </ion-item>
+
+        <ion-item (click)="hotel_info()">
+            <ion-badge class="end">4.7 <ion-icon class="zmdi zmdi-star"></ion-icon>
+            </ion-badge>
+            <ion-scroll scrollX="true">
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+            </ion-scroll>
+            <div class="item_details">
+                <h2 class="d-flex">Hotel Sky Garden <span class="end">$100.00</span></h2>
+                <p class="d-flex">City park, Manhattan <span class="end">For 2 {{'guests' | translate}}</span></p>
+            </div>
+        </ion-item>
+
+        <ion-item (click)="hotel_info()">
+            <ion-badge class="end">4.7 <ion-icon class="zmdi zmdi-star"></ion-icon>
+            </ion-badge>
+            <ion-scroll scrollX="true">
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+            </ion-scroll>
+            <div class="item_details">
+                <h2 class="d-flex">Hotel Sky Garden <span class="end">$100.00</span></h2>
+                <p class="d-flex">City park, Manhattan <span class="end">For 2 {{'guests' | translate}}</span></p>
+            </div>
+        </ion-item>
+
+        <ion-item (click)="hotel_info()">
+            <ion-badge class="end">4.7 <ion-icon class="zmdi zmdi-star"></ion-icon>
+            </ion-badge>
+            <ion-scroll scrollX="true">
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/12.png" class="crop_img">
+                </div>
+                <div class="img_box center_img">
+                    <img src="assets/imgs/13.png" class="crop_img">
+                </div>
+            </ion-scroll>
+            <div class="item_details">
+                <h2 class="d-flex">Hotel Sky Garden <span class="end">$100.00</span></h2>
+                <p class="d-flex">City park, Manhattan <span class="end">For 2 {{'guests' | translate}}</span></p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer no-border>
+    <ion-row>
+        <ion-col col-6 no-padding>
+            <button ion-button text-uppercase no-margin full icon-start class="btn">
+                <ion-icon class="zmdi zmdi-tune"></ion-icon>
+                {{'filters' | translate}}
+            </button>
+        </ion-col>
+        <ion-col col-6 no-padding>
+            <button ion-button text-uppercase no-margin full icon-start class="btn">
+                <ion-icon class="zmdi zmdi-map"></ion-icon>
+                {{'map_view' | translate}}
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-footer>

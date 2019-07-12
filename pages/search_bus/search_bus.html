@@ -1,0 +1,81 @@
+<ion-header class="theme_header bg-transparent">
+    <ion-navbar>
+        <ion-title>
+            {{'search_bus' | translate}}
+        </ion-title>
+    </ion-navbar>
+    <div class="banner from">
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/bus.png" class="crop_img">
+        </div>
+        <ion-list no-lines class="form">
+            <ion-item>
+                <ion-icon class="zmdi zmdi-long-arrow-up" item-start></ion-icon>
+                <h4>{{'boarding_from' | translate}}</h4>
+                <!--                <ion-input type="text" value="Hou - Houstone, USA"></ion-input>-->
+                <h2>Houstone, USA</h2>
+            </ion-item>
+            <h3>
+                <ion-icon class="zmdi zmdi-swap-vertical"></ion-icon>
+            </h3>
+            <ion-item>
+                <ion-icon class="zmdi zmdi-long-arrow-down" item-start></ion-icon>
+                <h4>{{'travelling_to' | translate}}</h4>
+                <!--                <ion-input type="text" value="MHK - Manhattan, USA"></ion-input>-->
+                <h2>Manhattan, USA</h2>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="tab_container">
+        <div class="tab_contant">
+            <ion-list no-lines>
+                <ion-card>
+                    <ion-row>
+                        <ion-col col-5>
+                            <h3>{{'departure_date' | translate}}</h3>
+                            <ion-item>
+                                <div class="text">
+                                    <h2>23</h2>
+                                    <h4>Jul 2019 <span>Tuesday</span></h4>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col col-7>
+                            <div class="one_way_option">
+                                <ion-icon class="zmdi zmdi-calendar-alt" ion-datepicker [(value)]="initDate" locale="en-US" clear></ion-icon>
+                                <h4>
+                                    15 Jul
+                                    <span>Today</span>
+                                </h4>
+                                <h4>
+                                    16 Jul
+                                    <span>Tomorrow</span>
+                                </h4>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+                <ion-card class="select_provider">
+                    <h3>{{'bus_type' | translate}}</h3>
+                    <ion-row>
+                        <ion-col col-12>
+                            <ion-item>
+                                <ion-select [(ngModel)]="class">
+                                    <ion-option value="1">AC Sleeper</ion-option>
+                                    <ion-option value="2">AC seater</ion-option>
+                                </ion-select>
+                                <!--                                <ion-label>{{'class' | translate}}</ion-label>-->
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+<ion-footer no-border>
+    <button ion-button text-uppercase no-margin full class="btn" (click)="bus_list()">{{'show_result' | translate}}</button>
+</ion-footer>

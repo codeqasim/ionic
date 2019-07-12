@@ -1,0 +1,1138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import '../assets/material_icon/material-design-iconic-font.min';
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/font/material_icons.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/material_icon/Material-Design-Iconic-Font.woff') format('woff');
+}
+
+.zmdi {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+body,
+html,
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+d,
+strong,
+lable,
+li {
+    font-family: 'Roboto', sans-serif;
+    //letter-spacing: .05rem;
+}
+
+$theme-color: #32abff;
+$light-sky-color: #00e6ff;
+$bg-color: #f1f6f7;
+$white: #fff;
+$text-dark:#000000;
+$text-light:#b9b9b9;
+$gray:#c9c9c9;
+$yelow-color:#f6b425;
+$green-color:#5abd1e;
+$red-color:#FF4141;
+$theme-gradient:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(50, 171, 255, 0.99) 70%, rgba(50, 171, 255, 1) 71%);
+
+.bg-color {
+    background: $bg-color;
+}
+
+.button {
+    &.btn {
+        font-size: 1.45rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        height: 52px;
+        box-shadow: none;
+        background: $theme-color;
+        text-transform: none;
+        color: $bg-color;
+        letter-spacing: 1px;
+
+        &:hover:not(.disable-hover) {
+            background: $theme-color;
+        }
+
+        &[block] {
+            border-radius: 4px;
+        }
+
+        &[clear] {
+            color: $theme-color;
+            background: none;
+            font-weight: 500;
+            border: 1px solid $theme-color;
+
+            &:hover:not(.disable-hover) {
+                background: none;
+            }
+        }
+
+    }
+}
+
+
+.d-flex {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+
+    .end {
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+    }
+}
+
+.center_img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        &.crop_img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: -50% !important;
+            right: -50% !important;
+            margin: auto;
+        }
+
+    }
+}
+
+.header {
+    &::after {
+        display: none;
+    }
+
+    &.bg-transparent {
+        .toolbar-background {
+            background: transparent !important;
+        }
+    }
+
+    .toolbar {
+
+        .toolbar-background {
+            background-color: $white;
+            border: none !important;
+        }
+
+        .bar-button {
+            z-index: 999;
+            margin: 0;
+            padding: 0;
+            min-width: unset;
+            padding-left: 17px;
+            //
+            //            .ion-md-arrow-back:before {
+            //                content: "\f3cf";
+            //            }
+
+            .button-inner {
+                ion-icon {
+                    font-size: 2rem;
+                    color: darken($theme-color, 100%);
+                    padding: 0;
+
+                    .back-button-text {
+                        display: none !important;
+                    }
+                }
+
+                .back-button-text {
+                    display: none !important;
+                }
+            }
+        }
+
+        .title {
+            .toolbar-title {
+                font-size: 2.2rem;
+                font-weight: 500;
+                color: $text-dark;
+                display: flex;
+                align-items: center;
+                text-transform: none;
+                letter-spacing: .5px;
+                align-items: center;
+                padding: 0 17px;
+
+                .end {
+                    margin-left: auto !important;
+
+                    img {
+                        width: 22px;
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+        }
+
+        &.toolbar-ios {
+            ion-title {
+                padding: 0 0px;
+                position: unset;
+
+                .toolbar-title-ios {
+                    text-align: justify;
+                }
+            }
+
+            .back-button {
+                .button-inner {
+                    .back-button-text {
+                        display: none !important;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &.theme_header {
+        background: $white;
+        padding-top: 5px;
+
+        .toolbar {
+            display: block;
+
+            .title .toolbar-title {
+                font-size: 2.8rem !important;
+                font-weight: 500;
+                line-height: 30px;
+                margin-top: 10px;
+            }
+        }
+
+        &.bg-transparent {
+            background: transparent !important;
+        }
+    }
+
+}
+
+.form {
+    display: block;
+    position: relative;
+    background: $white;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+
+    .list {
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .item {
+        padding: 12px 0px 12px 0px;
+        //        min-height: unset;
+        border-bottom: 0px solid darken($bg-color, 20%) !important;
+        box-shadow: none !important;
+        background: none;
+        align-items: center;
+        margin-bottom: 0px;
+
+        .icon_box {
+            margin: 0 !important;
+            margin-right: 14px !important;
+            position: relative;
+            top: 2px;
+
+            img {
+                width: 23px;
+            }
+
+            ion-icon {
+                color: $theme-color;
+                font-size: 1.6rem;
+            }
+        }
+
+        .item-inner {
+            border: none !important;
+            box-shadow: none !important;
+            margin-left: 0 !important;
+            padding: 0;
+
+            .input-wrapper {
+                display: block;
+            }
+
+            .label {
+                font-size: 1.15rem;
+                color: darken($text-light, 10%);
+                text-transform: none;
+                opacity: 1 !important;
+                margin: 0px;
+                margin-bottom: 8px;
+                font-weight: 500;
+                max-width: 100%;
+                letter-spacing: .3px;
+            }
+
+            ion-textarea,
+            ion-input {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-top: 0px;
+                color: $text-dark;
+                background: $bg-color;
+                padding: 12px 15px 12px 15px;
+                border-radius: 3px;
+
+                .text-input {
+                    margin: 0;
+                }
+
+                ::-webkit-input-placeholder {
+                    color: lighten($text-light, 40%);
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    letter-spacing: .7px;
+                }
+
+                ::-moz-placeholder {
+                    color: darken($text-dark, 5%);
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    letter-spacing: .7px;
+                }
+
+                :-ms-input-placeholder {
+                    color: darken($text-dark, 5%);
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    letter-spacing: .7px;
+                }
+
+                :-moz-placeholder {
+                    color: darken($text-dark, 5%);
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    letter-spacing: .7px;
+                }
+            }
+        }
+
+        &.item-input-has-focus {
+            .label {
+                color: $text-dark;
+            }
+        }
+
+        h3 {
+            margin: 0 !important;
+            height: 47px;
+            font-size: 1.55rem;
+            line-height: 75px;
+            color: $theme-color;
+            font-weight: 500;
+            position: relative;
+        }
+
+        &:first-child {
+            border-top: none !important;
+        }
+
+        &.item-select {
+            min-height: unset;
+
+            .label {
+                font-size: 1.15rem;
+                color: darken($text-light, 10%);
+                text-transform: none;
+                opacity: 1 !important;
+                margin: 0px;
+                margin-bottom: 8px;
+                font-weight: 500;
+                max-width: 100%;
+                letter-spacing: .3px;
+            }
+
+            .select {
+                padding: 0;
+                max-width: unset;
+                background: $bg-color;
+                padding: 12px 15px 12px 15px;
+                border-radius: 3px;
+
+                .select-text {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-top: 0px;
+                    color: $text-dark;
+
+                    &.select-placeholder {
+                        color: lighten($text-light, 40%);
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        letter-spacing: .7px;
+
+                    }
+
+                }
+
+                .select-icon {
+                    width: 18px;
+
+                    .select-icon-inner {
+                        color: darken($text-light, 100%);
+                    }
+                }
+            }
+        }
+
+        &.password {
+            .item-inner ion-input {
+                .text-input {
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+
+    .row {
+        margin: 0 -7px;
+
+        .col {
+            padding: 0 7px;
+        }
+    }
+}
+
+.select-alert {
+    .alert-wrapper {
+        //background: $info;
+
+        .alert-head {
+            color: $theme-color;
+            text-align: center;
+        }
+
+        .alert-radio-group {
+            .alert-radio-label {
+                color: darken($theme-color, 100%);
+            }
+        }
+
+        .alert-button-group {
+            //padding: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-content: unset;
+
+            .alert-button {
+                display: block;
+                margin: 0;
+                background: $theme-color;
+                border-radius: 4px;
+                color: $white;
+                padding: 10px 19px;
+                font-size: 1.6rem;
+                font-weight: 500;
+
+                &:last-child {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+.picker-wrapper {
+    background: $white !important;
+    border: none !important;
+    padding: 5px;
+
+    .picker-toolbar {
+        background: $white !important;
+        height: 50px;
+
+
+        .picker-toolbar-button {
+            background: $theme-color;
+            border-radius: 5px;
+            width: 100px;
+            height: 35px;
+            padding: 0 !important;
+            position: relative;
+            overflow: hidden;
+
+            .picker-button {
+                padding: 0 !important;
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+
+            .button-inner {
+                color: $white;
+
+            }
+
+            &.picker-toolbar-cancel {
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .picker-opt {
+        color: $text-dark;
+
+        &.picker-opt-selected {
+            color: darken($theme-color, 0%) !important;
+
+        }
+
+    }
+}
+
+.datepicker-wrapper {
+    background: rgba(0, 0, 0, 0.51) !important;
+
+    .datepicker-header {
+        background: $theme-color !important;
+        display: none !important;
+
+    }
+
+    .datepicker-calendar {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background: $bg-color;
+
+        .datepicker-controls {
+            .button {
+                background: $theme-color;
+            }
+        }
+    }
+
+    .datepicker-footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        height: 51px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background: $bg-color;
+            margin: 0 auto;
+        }
+
+        button {
+            background: $theme-color;
+            margin: 0;
+            font-size: 1.45rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            height: 52px;
+            box-shadow: none;
+            background: $theme-color;
+            text-transform: none;
+            color: $bg-color;
+            letter-spacing: 1px;
+            border-radius: 0;
+
+        }
+
+    }
+}
+
+ion-tabs {
+    .tabbar {
+        background: $white !important;
+        box-shadow: 0 -6px 41px 7px rgba(0,0,0,0.1);
+        border: none !important;
+        &::after,
+        &::before{
+            display: none!important;
+        }
+
+        .tab-button {
+            background-repeat: no-repeat !important;
+            text-align: center !important;
+            background-position: center !important;
+            background-position-y: 14px !important;
+            background-size: 15px !important;
+            border: none !important;
+            opacity: 1 !important;
+            position: relative;
+
+            .tab-button-text {
+                margin-top: 30px;
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: lighten($text-dark, 20%);
+                letter-spacing: -.2px;
+            }
+
+            &:nth-child(1) {
+                background: url(../assets/imgs/ic_home.png);
+            }
+
+            &:nth-child(2) {
+                background: url(../assets/imgs/ic_booking.png);
+                background-size: 16px !important;
+            }
+
+            &:nth-child(3) {
+                background: url(../assets/imgs/ic_account.png);
+                background-size: 16px !important;
+            }
+
+            &[aria-selected=true] {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    height: 3px;
+                    width: 40px;
+                    border-radius: 50px;
+                    background: $theme-color;
+
+                }
+
+                &:nth-child(1) {
+                    background: url(../assets/imgs/ic_home_active.png);
+
+                }
+
+                &:nth-child(2) {
+                    background: url(../assets/imgs/ic_booking_active.png);
+                    background-size: 16px !important;
+                }
+
+                &:nth-child(3) {
+                    background: url(../assets/imgs/ic_account_active.png);
+                    background-size: 16px !important;
+                }
+
+                .tab-button-text {
+                    color: $theme-color;
+                    transform:unset!important;
+                }
+            }
+        }
+    }
+
+    &.tabs-ios {
+        .tabbar {
+            .tab-button {
+                min-height: 5.6rem;
+
+                .tab-button-text {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+[dir="rtl"] body {
+    .header {
+        .toolbar {
+            .title {
+                .toolbar-title {
+                    .end {
+                        margin-left: 0 !important;
+                        margin-right: auto !important;
+                    }
+                }
+            }
+
+            .bar-button {
+                padding-left: 0px;
+                padding-right: 18px;
+            }
+        }
+
+        //        &.theme_header .toolbar .bar-button {
+        //            padding-left: 0px;
+        //            padding-right: 3px;
+        //        }
+    }
+
+    .select-alert .alert-wrapper {
+        .alert-button-group .alert-button:last-child {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .alert-radio-icon {
+            left: -13px;
+        }
+    }
+
+    .d-flex {
+        .end {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+
+    .form {
+        ion-label {
+            transform-origin: right top !important;
+            margin-right: 0;
+        }
+
+        .item .item-inner ion-textarea .text-input,
+        .item .item-inner ion-input .text-input {
+            text-align: right;
+        }
+
+        .item .icon_box {
+            margin-right: 0px !important;
+            margin-left: 16px !important;
+        }
+
+    }
+
+    page-signin .socila_section .button.btn img {
+        left: unset;
+        right: -12px;
+    }
+
+    page-account {
+        .header .profile_box .img_box {
+            margin-right: 0px;
+            margin-left: 16px;
+        }
+
+        .list .item .item-inner .label h2 ion-icon {
+            margin-right: 0px;
+            margin-left: 30px;
+        }
+    }
+
+    page-my_profile .form .profile_img ion-icon {
+        right: unset;
+        left: 0;
+    }
+
+    page-my_reviews .list .item .item-inner .label .reviews_details .img_box {
+        margin-right: 0;
+        margin-left: 13px;
+    }
+
+    page-home {
+        .header.theme_header .banner .your_location ion-icon {
+            margin-right: 0px;
+            margin-left: 14px;
+        }
+
+        .scroll_box ion-scroll .items_scroll {
+            &:first-child {
+                margin-right: 20px;
+                margin-left: 4px;
+            }
+
+            &:last-child {
+                margin-left: 20px;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    page-home_reviews .list .item .item-inner .label .reviews_details .img_box,
+    page-hotel_review .list .item .item-inner .label .reviews_details .img_box {
+        margin-right: 0px;
+        margin-left: 13px;
+    }
+
+
+    page-my_bookings {
+        .tab_btn_box ion-scroll .segment .segment-button {
+            &:first-child {
+                margin-left: 12px;
+                margin-right: 22px;
+            }
+
+            &:last-child {
+                margin-right: 12px;
+                margin-left: 22px;
+            }
+        }
+
+        .list .item .item-inner .label .item_details .img_box {
+            margin-left: 25px;
+            margin-right: 0px;
+
+        }
+    }
+
+    page-holiday_list,
+    page-list_of_homestay,
+    page-hotels_list {
+        .footer .button.btn ion-icon {
+            padding-right: 0px;
+            padding-left: 11px;
+        }
+
+        .list .item .item-inner .label {
+            .badge {
+                left: unset;
+                right: 15px;
+            }
+
+            .scroll-x .img_box {
+                &:first-child {
+                    margin-left: .7px;
+                    margin-right: 5px;
+                }
+
+                &:last-child {
+                    margin-right: 07px;
+                    margin-left: 5px;
+                }
+            }
+
+            .item_details {
+                &::before {
+                    right: unset;
+                    left: 0;
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+
+    page-hotel_info .list .item.amenities .item-inner .label .scroll-x .scroll_box {
+        &:first-child {
+            margin-left: 3px;
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            margin-right: 3px;
+            margin-left: 10px;
+        }
+    }
+
+    page-holiday_list .list .item .item-inner .label .scroll-x .img_box,
+    page-list_of_homestay .list .item .item-inner .label .scroll-x .img_box {
+        &:first-child {
+            margin-left: -0.4px;
+            margin-right: 3px;
+        }
+
+        &:last-child {
+            margin-right: -0.4px;
+            margin-left: 3px;
+        }
+    }
+
+    page-homestay_booked .booking_receipt .banner .scroll-x .item_scroll,
+    page-hotel_booked .booking_receipt .banner .scroll-x .item_scroll,
+    page-holiday_booked .booking_receipt .banner .scroll-x .item_scroll {
+        &:first-child {
+            margin-left: -0.8px;
+            margin-right: 21.5px;
+        }
+
+        &:last-child {
+            margin-right: -0.8px;
+            margin-left: 21.5px;
+        }
+    }
+
+    page-bus_ticket .booking_receipt .container.receipt_header .img_box {
+        margin-right: 0px;
+        margin-left: 16px;
+    }
+
+    page-bus_list .list .item .item-inner,
+    page-flight_result .list .item .item-inner .label,
+    page-train_result .list .item .item-inner .label {
+        .item_header::before {
+            transform: rotate(180deg);
+            right: unset;
+            left: 0;
+        }
+
+        .item_containt {
+            .img_box {
+                margin-left: 14px;
+                margin-right: 0;
+            }
+
+            .text_box .row .col .icon_box ion-icon {
+                &:first-child {
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+
+                &:last-child {
+                    margin-right: auto;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .item_footer .scroll-x .item_scroll {
+            &:first-child {
+                margin-left: 2px;
+                margin-right: 23px;
+            }
+
+            &:last-child {
+                margin-left: 23px;
+                margin-right: 2px;
+            }
+        }
+
+    }
+
+    page-flight_result .header .tab_btn_box ion-scroll .segment .segment-button {
+        &:first-child {
+            margin-left: 5px;
+            margin-right: 16px;
+        }
+
+        &:last-child {
+            margin-right: 5px;
+            margin-left: 16px;
+        }
+    }
+
+    page-cab_list .list .item .item-inner .label {
+        .item_containt {
+            padding: 11px 8px 7px 11px;
+
+            &::before {
+                right: unset;
+                left: 0;
+                transform: rotate(-180deg);
+            }
+
+            .img_box {
+                margin-right: 0px;
+                margin-left: 14px;
+            }
+        }
+
+        .item_footer {
+            padding: 8px 12px 8px 11px;
+
+            h5 ion-icon {
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    page-cab_info .list .item.cab_company .item-inner .label .details .img_box {
+        margin-right: 0px;
+        margin-left: 16px;
+    }
+    page-search_bus,
+    page-search_cab,
+    page-search_holiday,
+    page-search_homestay,
+    page-search_hotel,
+    page-search_train,
+    page-search_flights,
+    page-train_info,
+    page-bus_info,
+    page-flight_info {
+        .header.theme_header .banner {
+            .list.form {
+                .item ion-icon[item-start] {
+                    margin-right: 0px;
+                    margin-left: 17px;
+                }
+
+                .traveling_time {
+                    padding-left: 0px;
+                    padding-right: 39px;
+                }
+            }
+
+            .facilities h2 ion-icon {
+                margin-right: 0px;
+                margin-left: 7px;
+            }
+        }
+
+        .container .flight_details .flight_img {
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+
+    }
+
+    page-bus_info .container {
+        .bus_details {
+            .bus_img {
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+
+            .text.end h2 ion-icon {
+                margin-right: 0px;
+                margin-left: 7px;
+            }
+        }
+
+        .list .item .item-inner .label {
+            .bus_seats {
+                margin-left: 0;
+                margin-right: auto;
+            }
+
+            .bus_seats_label {
+                left: unset;
+                right: 0;
+
+                h3 {
+                    left: unset;
+                    right: 0;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    page-filter .list .card {
+        .scroll-x {
+            .item {
+                &:first-child {
+                    margin-left: 3px;
+                    margin-right: 25px;
+                }
+
+                &:last-child {
+                    margin-right: 3px;
+                    margin-left: 25px;
+                }
+
+
+            }
+        }
+
+        &.departure_time .item .item-inner .label ion-icon {
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+
+    }
+
+    page-confirm_booking {
+        .banner {
+            .flight_details .flight_img {
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+
+            .list.form .item ion-icon[item-start] {
+                margin-right: 0px;
+                margin-left: 22px;
+            }
+        }
+    }
+
+    page-train_info .header.theme_header .banner .list.form .traveling_time {
+        h3 {
+            padding-left: 0px;
+            padding-right: 10px;
+
+            ion-icon {
+                margin-left: 0px;
+                margin-right: 9px;
+            }
+        }
+    }
+    page-search_bus .tab_container .tab_contant .list .card .item ,
+    page-search_cab .tab_container .tab_contant .list .card .item,
+    page-search_hotel .tab_container .tab_contant .list .card .item,
+    page-search_train .tab_container .tab_contant .list .card .item,
+    page-search_flights .tab_container .tab_contant .list .card .item {
+        .item-inner .label .text h2 {
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+
+        &.item-select .select .select-text {
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+    }
+    page-homestay_info .list .item.amenities .item-inner .label .scroll-x .scroll_box{
+        &:first-child{
+            margin-left: 3px;
+            margin-right: 10px;
+        } 
+        &:last-child{
+            margin-left: 3px;
+            margin-right: 10px;
+        }
+    }
+}

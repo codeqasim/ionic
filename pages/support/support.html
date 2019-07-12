@@ -1,0 +1,48 @@
+<ion-header class="theme_header">
+    <ion-navbar>
+        <ion-title>
+            {{'we_are_happy_to' | translate}}<br>{{'hear_from_you' | translate}}
+            <h2> {{'let_us_know_your_queries_feedback' | translate}}</h2>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="banner">
+        <ion-row>
+            <ion-col col-6>
+                <button ion-button block clear no-margin icon-start class="btn">
+                    <ion-icon class="zmdi zmdi-local-phone"></ion-icon>
+                    {{'call_us' | translate}}
+                </button>
+            </ion-col>
+            <ion-col col-6>
+                <button ion-button block no-margin icon-start class="btn">
+                    <ion-icon class="zmdi zmdi-email"></ion-icon>
+                    {{'mail_us' | translate}}
+                </button>
+            </ion-col>
+        </ion-row>
+    </div>
+
+    <div class="form">
+        <h2>{{'or_send_your_message' | translate}}</h2>
+        <ion-list no-lines>
+            <ion-item>
+                <ion-label>{{'full_name' | translate}}</ion-label>
+                <ion-input type="text" value="Sam Smith"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>{{'contact_number' | translate}}</ion-label>
+                <ion-input type="text" value="samsmith@mail.com"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>{{'your_message' | translate}}</ion-label>
+                <ion-input type="text" value="{{'write_your_message' | translate}}"></ion-input>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+<ion-footer no-border>
+    <button ion-button text-uppercase no-margin full class="btn">{{'submit_now' | translate}}</button>
+</ion-footer>

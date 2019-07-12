@@ -1,0 +1,123 @@
+page-my_bookings {
+    .header.theme_header .toolbar .title .toolbar-title {
+        font-size: 2.3rem !important;
+        letter-spacing: 0;
+    }
+
+    .tab_btn_box {
+        ion-scroll {
+            height: 30px;
+            white-space: nowrap;
+            margin-top: 10px;
+
+            .segment {
+                justify-content: unset !important;
+                display: block !important;
+                border: none !important;
+
+
+                .segment-button {
+                    display: inline-block;
+                    width: auto;
+                    border: none;
+                    height: auto;
+                    text-transform: none;
+                    opacity: 1;
+                    padding: 0px;
+                    color: darken($theme-color, 100%);
+                    font-size: 1.55rem;
+                    font-weight: 600;
+                    text-align: justify;
+                    margin: 0 12px;
+                    height: 20px;
+                    line-height: normal;
+
+                    &:first-child {
+                        margin-left: 22px;
+                    }
+
+                    &.segment-activated {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .list {
+        width: calc(100% - 25px);
+        margin: 0 auto;
+        margin-top: 12px;
+
+        .item {
+            padding: 0;
+            margin-bottom: 12px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 6px 8px -6px rgba(0, 0, 0, .1);
+
+            .item-inner {
+                padding: 0;
+
+                .label {
+                    margin: 0;
+
+                    .item_header {
+                        background: lighten($bg-color, 2%);
+                        padding: 7px 12px;
+
+                        h2 {
+                            margin: 0;
+                            font-size: 1.55rem;
+                            font-weight: 600;
+
+                            span {
+                                color: $theme-color;
+                                letter-spacing: 0;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+
+                    .item_details {
+                        padding: 12px 18px 9px 18px;
+
+                        .img_box {
+                            min-width: 30px;
+                            max-width: 30px;
+                            margin-right: 25px;
+
+                        }
+
+                        .text_box {
+                            h3 {
+                                margin: 0;
+                                font-size: 1.55rem;
+                                font-weight: 600;
+                                padding-bottom: 6px;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+
+                            p {
+                                margin: 0;
+                                color: darken($text-light, 14%);
+                                font-size: 1.15rem;
+                                font-weight: 400;
+                                line-height: 18px;
+                                letter-spacing: .5px;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

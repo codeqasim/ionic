@@ -1,0 +1,21 @@
+<ion-header class="theme_header">
+    <ion-navbar>
+        <ion-title>
+            {{'verification_code' | translate}}
+            <h2> {{'verification_code_massage' | translate}}</h2>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="form">
+        <ion-list no-lines>
+            <ion-item class="password">
+                <ion-label class="d-flex">{{'enter_verification_code' | translate}}</ion-label>
+                <ion-input type="text" value="5887"></ion-input>
+            </ion-item>
+        </ion-list>
+    </div>
+
+    <button ion-button text-uppercase no-margin full class="btn" (click)="tabs()">{{'sign_up_now' | translate}}</button>
+</ion-content>

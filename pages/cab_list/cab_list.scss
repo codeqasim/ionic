@@ -1,0 +1,198 @@
+page-cab_list {
+    .header {
+        padding-top: 14px;
+        overflow: hidden;
+        padding-bottom: 10px;
+
+        .toolbar .bar-button .button-inner ion-icon {
+            color: $white !important;
+            position: relative;
+            top: -9px;
+        }
+
+        .toolbar .title .toolbar-title {
+            display: block;
+
+
+            h2 {
+                color: $white;
+                margin: 0;
+                font-size: 2.1rem;
+                font-weight: 400;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            p {
+                margin: 0;
+                color: darken($text-light, 5%);
+                font-size: 1.2rem;
+                font-weight: 400;
+
+                ion-icon {
+                    font-size: .1rem;
+                    color: $white;
+                    min-width: 20px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 3px;
+                        height: 3px;
+                        background: $white;
+                        margin: auto;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .header_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            img {
+                position: absolute;
+                top: -54px;
+            }
+        }
+    }
+
+
+    .list {
+        margin-top: 12px;
+
+        .item {
+            background: none;
+            padding: 0;
+            position: relative;
+            overflow: visible;
+            width: calc(100% - 25px);
+            box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            margin-bottom: 12px;
+            border-radius: 4px;
+
+            .item-inner {
+                padding: 0;
+
+                .label {
+                    margin: 0;
+
+                    .item_containt {
+                        background: $white;
+                        padding: 11px 11px 7px 8px;
+                        position: relative;
+                        z-index: 99;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            width: 100px;
+                            right: 0;
+                            height: 100%;
+                            background: $theme-gradient;
+                            opacity: .8;
+
+                        }
+
+                        .img_box {
+                            min-width: 65px;
+                            max-width: 65px;
+                            // height: 55px;
+                            border-radius: 5px;
+                            margin-right: 14px;
+                        }
+
+                        .text_box {
+                            width: 100%;
+                            position: relative;
+                            z-index: 99;
+
+
+                            h2 {
+                                font-size: 1.45rem;
+                                color: darken($text-dark, 100%);
+                                font-weight: 600;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                span {
+                                    color: $white;
+                                    font-weight: 500;
+                                    font-size: 1.35rem;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 1.1rem;
+                                color: darken($text-light, 10%);
+                                font-weight: 400;
+
+                                .end {
+                                    color: darken($text-light, 100%);
+                                    font-size: .8rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .item_footer {
+                        background: lighten($bg-color, 2%);
+                        padding: 8px 11px 8px 12px;
+
+                        h5 {
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                            color: darken($text-light, 100%);
+                            width: auto;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            ion-icon {
+                                color: darken($text-light, 100%);
+                                font-size: 1.3rem;
+                                margin-right: 5px;
+                                display: block;
+                            }
+                        }
+
+                        .badge {
+                            font-weight: 400;
+                            text-align: center;
+                            padding: 0;
+                            background: $green-color;
+                            min-width: 41px;
+                            max-width: 43px;
+                            font-size: 1.2rem;
+                            line-height: 21px;
+                            height: 21px;
+                            border-radius: 3px;
+
+                            ion-icon {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

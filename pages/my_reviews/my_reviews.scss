@@ -1,0 +1,105 @@
+page-my_reviews {
+    .header.theme_header .toolbar .title .toolbar-title {
+        display: block !important;
+        font-size: 1.9rem !important;
+        font-weight: 600;
+
+        h2 {
+            margin: 0;
+            white-space: normal;
+            color: darken($text-light, 0%);
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin: 0;
+            letter-spacing: .9px;
+        }
+    }
+
+    h1 {
+        background: $bg-color;
+        color: darken($text-light, 30%);
+        font-weight: 400;
+        padding: 12px 16px;
+        font-size: 1.85rem;
+        margin: 0;
+        margin-top: 17px;
+    }
+
+    .list {
+        margin-bottom: 0;
+
+        .item {
+            padding: 15px 17px 15px 17px;
+            margin-bottom: 5px;
+
+            .item-inner {
+                padding: 0;
+
+                .label {
+                    margin: 0;
+                    white-space: normal;
+
+                    .reviews_details {
+                        display: flex;
+                        align-items: center;
+
+                        .img_box {
+                            min-width: 40px;
+                            max-width: 40px;
+                            height: 40px;
+                            border-radius: 4px;
+                            margin-right: 13px;
+                        }
+
+                        .other_details {
+                            width: 100%;
+
+                            h2 {
+                                span {
+                                    &.name {
+                                        font-size: 1.58rem;
+                                        font-weight: 700;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        //max-width: calc(100% - 83px);
+                                        width: calc(100% - 83px);
+                                        display: block;
+                                    }
+
+                                    &.ratings_icon {
+                                        min-width: 83px;
+
+                                        ion-icon {
+                                            font-size: 1.6rem;
+                                            color: lighten($text-light, 10%);
+
+                                            &.active {
+                                                color: $yelow-color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            h3 {
+                                color: darken($text-light, 10%);
+                                font-size: 1.15rem;
+                            }
+
+                        }
+
+                    }
+
+                    p {
+                        color: darken($text-light, 100%);
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        padding-top: 10px;
+                    }
+
+                }
+            }
+        }
+    }
+}

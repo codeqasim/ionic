@@ -1,0 +1,226 @@
+page-home {
+    .header.theme_header {
+        padding-top: 0;
+
+        .toolbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            z-index: 99;
+
+            .title .toolbar-title {
+                color: $white;
+                margin-top: 30px;
+            }
+        }
+
+
+
+        .banner {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 345px;
+            padding: 0 22px;
+
+            .banner_bg {
+                position: absolute !important;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            .your_location {
+                position: relative;
+                z-index: 99;
+                margin-top: 124px;
+                align-items: flex-start;
+
+                ion-icon {
+                    color: $light-sky-color;
+                    font-size: 1.6rem;
+                    margin-right: 14px;
+                    min-width: 10px;
+                }
+
+                h3 {
+                    color: $light-sky-color;
+                    margin: 0;
+                    border-bottom: 1px solid $light-sky-color;
+                    width: 100%;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    padding-bottom: 8px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+
+            .menu {
+                position: relative;
+                z-index: 999;
+                padding-top: 13px;
+
+
+                .row {
+                    margin: 0 -14px;
+
+                    .col {
+                        padding: 8px 10px;
+
+                        .menu_items {
+                            text-align: center;
+                            position: relative;
+                            overflow: hidden;
+                            border-radius: 10px;
+                            width: 65px;
+                            height: 65px;
+                            margin: 2px auto;
+
+                            img {
+                                width: 30px;
+                                position: relative;
+                                z-index: 999;
+                                display: block;
+                                margin: 0 auto;
+                                padding-top: 11px;
+                                min-height: 40px;
+                                max-height: 40px;
+                                margin-bottom: 7px;
+                            }
+
+                            p {
+                                position: relative;
+                                z-index: 999;
+                                margin: 0;
+                                color: $white;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                text-transform: uppercase;
+                                font-size: .9rem;
+                                font-weight: 300;
+
+                            }
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: -20px;
+                                left: -20px;
+                                right: -20px;
+                                bottom: -20px;
+                                //                                width: 100%;
+                                //                                height: 100%;
+                                margin: auto;
+                                background: url(../assets/imgs/banner_bg.png);
+                                filter: blur(8px);
+                                opacity: 0.5;
+                                background-size: cover;
+                                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 2;
+
+            }
+        }
+    }
+
+    .scroll_box {
+        position: relative;
+        overflow: hidden;
+
+        .heading_box {
+            padding: 18px 20px;
+            padding-bottom: 17px;
+
+            h2 {
+                margin: 0;
+                font-size: 1.86rem;
+                font-weight: 700;
+                letter-spacing: 0;
+            }
+
+            p {
+                margin: 0;
+                color: $text-light;
+                font-size: 1.25rem;
+            }
+        }
+
+        ion-scroll {
+            height: 140px;
+            white-space: nowrap;
+
+            .items_scroll {
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                background: $white;
+                border-radius: 7px;
+                width: 195px;
+                margin: 0 4px;
+
+                &:first-child {
+                    margin-left: 20px;
+                }
+
+                &:last-child {
+                    margin-right: 20px;
+                }
+
+                .item_img {
+                    width: 100%;
+                    height: 94px;
+
+
+                }
+
+                .item_details {
+                    position: relative;
+                    padding: 7px 11px 7px 11px;
+
+                    h2 {
+                        margin: 0;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        letter-spacing: 0;
+                    }
+
+                    h3 {
+                        margin: 0;
+                        color: $text-light;
+                        font-size: .9rem;
+                        letter-spacing: .5px;
+
+                        span {
+                            &.end {
+                                font-size: 1rem;
+                                color: $theme-color;
+                                letter-spacing: .0;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
