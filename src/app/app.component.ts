@@ -3,8 +3,6 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-//import { Cab_infoPage } from '../pages/cab_info/cab_info';
-import { SigninPage } from '../pages/signin/signin';
 import { HomePage } from '../pages/home/home';
 import { TranslateService } from '../../node_modules/@ngx-translate/core';
 @Component({
