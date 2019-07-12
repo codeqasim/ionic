@@ -1,5 +1,7 @@
 {
-  "name": "travel",
-  "integrations": {},
+  "name": "tripUp",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
